@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Andrey Buno — AI &amp; Full-Stack Engineer, Lviv</title>
+
+<meta name="description" content="Andrey Buno is an AI and full-stack engineer in Lviv, Ukraine. He builds LLM features, AI agents and SaaS platforms with Python, FastAPI, React and Next.js.">
+<meta name="author" content="Andrey Buno">
+<!-- One tag, kept in sync with the chosen theme by the script below. Media-scoped
+     tags would go stale as soon as someone overrides their system preference. -->
+<meta name="theme-color" content="#f0ebe2">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Andrey Buno — AI &amp; Full-Stack Engineer">
+<meta property="og:description" content="LLM features, AI agents and SaaS platforms. Python, FastAPI, React, Next.js.">
+<meta property="og:image" content="assets/img/andrey-avatar.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/andrey-avatar.jpg">
+
+<link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/dmsans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+  /* Set the theme before first paint so there is no flash. */
+  (function () {
+    document.documentElement.classList.add('js');
+    try {
+      var saved = localStorage.getItem('ab-theme');
+      var dark = saved ? saved === 'dark'
+                       : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.content = dark ? '#121318' : '#f0ebe2';
+    } catch (e) {}
+  })();
+</script>
+</head>
+
+<body id="top">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Water layer: ripple simulation driven by the pointer. Purely decorative. -->
+<canvas id="water" aria-hidden="true"></canvas>
+<div class="drop-cursor" aria-hidden="true">
+  <span class="drop-cursor__halo"></span>
+  <span class="drop-cursor__dot"></span>
+</div>
+
+<header class="masthead" data-masthead>
+  <div class="shell masthead__inner">
+
+    <a class="mark" href="#top" aria-label="Andrey Buno — back to top">
+      <span class="mark__glyph" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+          <path d="M16 3c5.6 6.4 9.2 11 9.2 15.1A9.2 9.2 0 0 1 16 27a9.2 9.2 0 0 1-9.2-8.9C6.8 14 10.4 9.4 16 3Z"/>
+          <ellipse cx="12.4" cy="18.4" rx="2.5" ry="3.4" transform="rotate(-24 12.4 18.4)" opacity=".55"/>
+        </svg>
+      </span>
+      <span class="mark__text">
+        <b>Andrey Buno</b>
+        <i>AI &amp; full-stack engineer</i>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#path">Path</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="masthead__tools">
+      <button class="icon-btn" type="button" data-theme-toggle
+              aria-label="Switch colour theme" title="Switch colour theme">
+        <svg class="icon-btn__sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <g stroke-linecap="round"><path d="M12 2.6v2.6M12 18.8v2.6M2.6 12h2.6M18.8 12h2.6M5.3 5.3l1.9 1.9M16.8 16.8l1.9 1.9M18.7 5.3l-1.9 1.9M7.2 16.8l-1.9 1.9"/></g>
+        </svg>
+        <svg class="icon-btn__moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z"/>
+        </svg>
+      </button>
+
+      <button class="icon-btn icon-btn--menu" type="button" data-nav-toggle
+              aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ─────────────────────────────  HERO  ───────────────────────────── -->
+  <section class="hero">
+    <div class="shell hero__grid">
+
+      <div class="hero__copy">
+        <p class="status" data-reveal>
+          <span class="status__pulse" aria-hidden="true"></span>
+          Open to new projects · Lviv, Ukraine (UTC+2)
+        </p>
+
+        <h1 class="hero__title" data-reveal data-reveal-delay="1">
+          <em>Senior</em> Full-Stack &amp; AI Engineer | AI SaaS, Automation &amp; Web Applications
+        </h1>
+
+        <p class="hero__lede" data-reveal data-reveal-delay="2">
+          I'm Andrey — a Senior Full-Stack &amp; AI Engineer with 7 years of software development experience, including freelance and independent projects.
+          I specialize in building AI-powered SaaS products, LLM applications, intelligent automation systems, and scalable web applications.
+          I work across the full product development lifecycle, 
+          from turning an initial idea into a technical architecture to building, integrating, deploying, and improving production-ready applications.
+        </p>
+
+        <div class="hero__actions" data-reveal data-reveal-delay="3">
+          <a class="btn btn--solid" href="#work">
+            See selected work
+            <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact">Start a conversation</a>
+        </div>
+
+        <ul class="hero__facts" data-reveal data-reveal-delay="4">
+          <li><b>7+ years</b><span>shipping production software</span></li>
+          <li><b>Japan → Toronto</b><span>teams I've shipped with</span></li>
+          <li><b>MSc CS</b><span>Ivan Franko University, Lviv</span></li>
+          <li><b>EN · UA · PL</b><span>languages I work in</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__portrait" data-reveal data-reveal-delay="2">
+        <figure class="portrait">
+          <div class="portrait__frame">
+            <img src="assets/img/andrey-portrait.jpg" width="900" height="1200"
+                 alt="Portrait of Andrey Buno" fetchpriority="high" decoding="async">
+            <span class="portrait__sheen" aria-hidden="true"></span>
+          </div>
+
+          <figcaption class="portrait__tag portrait__tag--role">
+            <span class="portrait__tag-label">Currently</span>
+            AI & Full-Stack Engineer
+          </figcaption>
+
+          <div class="portrait__tag portrait__tag--place" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            Lviv, UA
+          </div>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────  WORK  ───────────────────────────── -->
+  <section class="section" id="work">
+    <div class="shell">
+
+      <header class="section__head" data-reveal>
+        <p class="eyebrow"><span aria-hidden="true">01</span> Selected work</p>
+        <h2 class="section__title">Three things I shipped, and what they actually took.</h2>
+        <p class="section__note">
+          Live sites, not case-study fiction. Each one had a different hard part — a legacy
+          stack, a content model, or an AI workflow that had to stay cheap under load.
+        </p>
+      </header>
+
+      <div class="work">
+
+        <!-- ── Project 03 (most recent, leading) ── -->
+        <article class="project" data-reveal>
+          <a class="project__shot" href="https://drivendispatchsolutions.com/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/work/driven-dispatch.jpg" width="1200" height="760"
+                 alt="" loading="lazy" decoding="async">
+          </a>
+
+          <div class="project__body">
+            <p class="project__index"><span>Case</span> 01</p>
+            <h3 class="project__title">
+              <a href="https://drivendispatchsolutions.com/" target="_blank" rel="noopener noreferrer">
+                Driven Dispatch Solutions
+                <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg>
+              </a>
+            </h3>
+            <p class="project__kicker">AI SaaS platform for truck dispatch · full-stack &amp; architecture</p>
+
+            <p class="project__text">
+              A subscription platform that takes the repetitive half of a dispatcher's day —
+              sourcing loads, drafting broker replies, keeping paperwork straight — and hands it
+              to an LLM workflow. Owner-operators sign in to a dashboard where every job, document
+              and automation run is in one place.
+            </p>
+
+            <dl class="project__meta">
+              <div><dt>My role</dt><dd>Sole developer: system architecture, frontend, backend APIs, database design, AI integration and deployment.</dd></div>
+              <div><dt>Hard part</dt><dd>Keeping the AI step predictable and cheap — structured outputs, retries and caching so a bad model day doesn't become a bad customer day.</dd></div>
+              <div><dt>Outcome</dt><dd>A scalable MVP in production, with room to bolt on further AI features and third-party integrations without a rewrite.</dd></div>
+            </dl>
+
+            <ul class="chips">
+              <li class="chip"><img src="assets/img/tech/nextjs.svg" alt="" width="18" height="18" class="logo--adapt"><span>Next.js</span></li>
+              <li class="chip"><img src="assets/img/tech/react.svg" alt="" width="18" height="18"><span>React</span></li>
+              <li class="chip"><img src="assets/img/tech/nodejs.svg" alt="" width="18" height="18"><span>Node.js</span></li>
+              <li class="chip"><img src="assets/img/tech/postgresql.svg" alt="" width="18" height="18"><span>PostgreSQL</span></li>
+              <li class="chip"><i class="mask mask--openai"></i><span>LLM API</span></li>
+              <li class="chip"><img src="assets/img/tech/stripe.png" alt="" width="18" height="18"><span>Subscriptions</span></li>
+            </ul>
+
+            <a class="link-out" href="https://drivendispatchsolutions.com/" target="_blank" rel="noopener noreferrer">
+              drivendispatchsolutions.com
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Silverstein Songs ── -->
+        <article class="project project--flip" data-reveal>
+          <a class="project__shot" href="https://silversteinsongs.com/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/work/silverstein-songs.jpg" width="1200" height="760"
+                 alt="" loading="lazy" decoding="async">
+          </a>
+
+          <div class="project__body">
+            <p class="project__index"><span>Case</span> 02</p>
+            <h3 class="project__title">
+              <a href="https://silversteinsongs.com/" target="_blank" rel="noopener noreferrer">
+                Silverstein Songs
+                <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg>
+              </a>
+            </h3>
+            <p class="project__kicker">Music publishing &amp; artist site for a Tony-nominated songwriter</p>
+
+            <p class="project__text">
+              A catalogue site built around listening: songs, co-writers, sessions and news, all
+              reachable in a couple of taps. The brief was editorial — it had to feel like a record
+              sleeve, not a CMS — while staying fast enough that a track starts before attention drifts.
+            </p>
+
+            <dl class="project__meta">
+              <div><dt>My role</dt><dd>Full-stack engineer — interface, API layer, database modelling, SEO and cross-browser work.</dd></div>
+              <div><dt>Hard part</dt><dd>A content model flexible enough for songs, writers and sessions to cross-reference each other without the editor needing a manual.</dd></div>
+              <div><dt>Outcome</dt><dd>A fast, responsive site on a clean codebase the client's next developer can pick up without a handover call.</dd></div>
+            </dl>
+
+            <ul class="chips">
+              <li class="chip"><img src="assets/img/tech/nextjs.svg" alt="" width="18" height="18" class="logo--adapt"><span>Next.js</span></li>
+              <li class="chip"><img src="assets/img/tech/react.svg" alt="" width="18" height="18"><span>React</span></li>
+              <li class="chip"><img src="assets/img/tech/typescript.svg" alt="" width="18" height="18"><span>TypeScript</span></li>
+              <li class="chip"><img src="assets/img/tech/postgresql.svg" alt="" width="18" height="18"><span>PostgreSQL</span></li>
+              <li class="chip"><img src="assets/img/tech/python.svg" alt="" width="18" height="18"><span>Python</span></li>
+            </ul>
+
+            <a class="link-out" href="https://silversteinsongs.com/" target="_blank" rel="noopener noreferrer">
+              silversteinsongs.com
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Tee Shirt Lady ── -->
+        <article class="project" data-reveal>
+          <a class="project__shot" href="https://teeshirtlady.com/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/work/tee-shirt-lady.jpg" width="1200" height="760"
+                 alt="" loading="lazy" decoding="async">
+          </a>
+
+          <div class="project__body">
+            <p class="project__index"><span>Case</span> 03</p>
+            <h3 class="project__title">
+              <a href="https://teeshirtlady.com/" target="_blank" rel="noopener noreferrer">
+                Tee Shirt Lady
+                <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg>
+              </a>
+            </h3>
+            <p class="project__kicker">E-commerce store with a customer slogan competition</p>
+
+            <p class="project__text">
+              An apparel shop with a twist: customers submit slogans, and one gets printed each
+              month. That meant a normal storefront plus a submission and moderation flow, all
+              inside WordPress without turning the admin into a plugin graveyard.
+            </p>
+
+            <dl class="project__meta">
+              <div><dt>My role</dt><dd>Full-stack developer — requirements, theme customisation, custom PHP and jQuery features, responsive build, deployment.</dd></div>
+              <div><dt>Hard part</dt><dd>Performance. An inherited theme and a growing catalogue meant trimming queries and assets rather than adding another caching plugin.</dd></div>
+              <div><dt>Outcome</dt><dd>A production storefront that holds up on desktop, tablet and phone, with a noticeably lighter page than the one it replaced.</dd></div>
+            </dl>
+
+            <ul class="chips">
+              <li class="chip"><img src="assets/img/tech/wordpress.svg" alt="" width="18" height="18"><span>WordPress</span></li>
+              <li class="chip"><img src="assets/img/tech/php.svg" alt="" width="18" height="18"><span>PHP</span></li>
+              <li class="chip"><img src="assets/img/tech/jquery.svg" alt="" width="18" height="18"><span>jQuery</span></li>
+              <li class="chip"><img src="assets/img/tech/mongodb.svg" alt="" width="18" height="18"><span>MongoDB</span></li>
+              <li class="chip chip--plain"><i class="mask mask--dot"></i><span>Responsive &amp; SEO</span></li>
+            </ul>
+
+            <a class="link-out" href="https://teeshirtlady.com/" target="_blank" rel="noopener noreferrer">
+              teeshirtlady.com
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────  ABOUT  ──────────────────────────── -->
+  <section class="section section--tint" id="about">
+    <div class="shell about">
+
+      <div class="about__media" data-reveal>
+        <div class="about__photo">
+          <img src="assets/img/andrey-about.jpg" width="640" height="800"
+               alt="Andrey Buno in Lviv" loading="lazy" decoding="async">
+        </div>
+        <p class="about__caption">Lviv, most days. Kraków when a client wants a whiteboard.</p>
+      </div>
+
+      <div class="about__copy" data-reveal data-reveal-delay="1">
+        <p class="eyebrow"><span aria-hidden="true">02</span> About</p>
+        <h2 class="section__title">I learned systems before I learned to like them.</h2>
+
+        <p>
+          My first job out of university was at a Japanese software house, writing backends for
+          clients who measured quality in uptime. Nearly four years there taught me the
+          unglamorous half of the craft: how a schema you chose in week one decides what you can
+          build in year two, and why the interesting bugs never show up in staging.
+        </p>
+        <p>
+          From 2024 to early 2026 I worked with a Toronto team on AI products — React and Next.js
+          on the front, Python and FastAPI behind it, with Claude and LangChain doing the work that
+          used to need a person and a spreadsheet. That combination is where I'm most useful now:
+          close enough to the model to know what it will get wrong, and close enough to the
+          database to make sure it doesn't matter.
+        </p>
+        <p>
+          I like problems that arrive slightly broken — the platform that grew faster than its
+          architecture, the prototype that needs to become a product. Fixing those is usually
+          cheaper than the rebuild everyone is bracing for.
+        </p>
+
+        <ul class="principles">
+          <li data-reveal data-reveal-delay="1">
+            <h3>Constraints first, framework second</h3>
+            <p>Budget, team size and deadline decide the stack more honestly than taste does.</p>
+          </li>
+          <li data-reveal data-reveal-delay="2">
+            <h3>Something real in week one</h3>
+            <p>A thin slice you can click beats a document describing a slice you can't.</p>
+          </li>
+          <li data-reveal data-reveal-delay="3">
+            <h3>Boring where it counts</h3>
+            <p>Auth, payments and data go with the proven option. Save the novelty for the product.</p>
+          </li>
+          <li data-reveal data-reveal-delay="4">
+            <h3>Written to be handed over</h3>
+            <p>If the next developer needs me on a call to understand it, I haven't finished.</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────  SKILLS  ─────────────────────────── -->
+  <section class="section" id="skills">
+    <div class="shell">
+
+      <header class="section__head" data-reveal>
+        <p class="eyebrow"><span aria-hidden="true">03</span> Toolkit</p>
+        <h2 class="section__title">What I reach for, and roughly in what order.</h2>
+        <p class="section__note">
+          Not a badge collection — these are the tools I've had in production, debugged at
+          uncomfortable hours, and would happily pick again.
+        </p>
+      </header>
+
+      <div class="skills">
+
+        <section class="skillset" data-reveal>
+          <h3 class="skillset__title"><span class="skillset__no">A</span> AI &amp; language models</h3>
+          <ul class="chips chips--lg">
+            <li class="chip"><i class="mask mask--openai"></i><span>OpenAI</span></li>
+            <li class="chip"><i class="mask mask--claude"></i><span>Claude</span></li>
+            <li class="chip"><img src="assets/img/tech/langchain.png" alt="" width="22" height="22"><span>LangChain</span></li>
+            <li class="chip chip--plain"><i class="mask mask--dot"></i><span>RAG pipelines</span></li>
+            <li class="chip chip--plain"><i class="mask mask--dot"></i><span>AI agents</span></li>
+            <li class="chip chip--plain"><i class="mask mask--dot"></i><span>Workflow automation</span></li>
+            <li class="chip chip--plain"><i class="mask mask--dot"></i><span>AI video editing</span></li>
+          </ul>
+        </section>
+
+        <section class="skillset" data-reveal data-reveal-delay="1">
+          <h3 class="skillset__title"><span class="skillset__no">B</span> Backend</h3>
+          <ul class="chips chips--lg">
+            <li class="chip"><img src="assets/img/tech/python.svg" alt="" width="22" height="22"><span>Python</span></li>
+            <li class="chip"><img src="assets/img/tech/fastapi.svg" alt="" width="22" height="22"><span>FastAPI</span></li>
+            <li class="chip"><img src="assets/img/tech/nodejs.svg" alt="" width="22" height="22"><span>Node.js</span></li>
+            <li class="chip"><img src="assets/img/tech/express.svg" alt="" width="22" height="22" class="logo--adapt"><span>Express</span></li>
+            <li class="chip chip--plain"><i class="mask mask--dot"></i><span>REST &amp; OpenAPI</span></li>
+            <li class="chip"><img src="assets/img/tech/stripe.png" alt="" width="22" height="22"><span>Stripe</span></li>
+          </ul>
+        </section>
+
+        <section class="skillset" data-reveal data-reveal-delay="2">
+          <h3 class="skillset__title"><span class="skillset__no">C</span> Frontend</h3>
+          <ul class="chips chips--lg">
+            <li class="chip"><img src="assets/img/tech/react.svg" alt="" width="22" height="22"><span>React</span></li>
+            <li class="chip"><img src="assets/img/tech/nextjs.svg" alt="" width="22" height="22" class="logo--adapt"><span>Next.js</span></li>
+            <li class="chip"><img src="assets/img/tech/typescript.svg" alt="" width="22" height="22"><span>TypeScript</span></li>
+            <li class="chip"><img src="assets/img/tech/javascript.svg" alt="" width="22" height="22"><span>JavaScript</span></li>
+            <li class="chip"><img src="assets/img/tech/tailwindcss.svg" alt="" width="22" height="22"><span>Tailwind CSS</span></li>
+          </ul>
+        </section>
+
+        <section class="skillset" data-reveal data-reveal-delay="1">
+          <h3 class="skillset__title"><span class="skillset__no">D</span> Data</h3>
+          <ul class="chips chips--lg">
+            <li class="chip"><img src="assets/img/tech/postgresql.svg" alt="" width="22" height="22"><span>PostgreSQL</span></li>
+            <li class="chip"><img src="assets/img/tech/mongodb.svg" alt="" width="22" height="22"><span>MongoDB</span></li>
+            <li class="chip"><img src="assets/img/tech/redis.svg" alt="" width="22" height="22"><span>Redis</span></li>
+            <li class="chip"><img src="assets/img/tech/mysql.svg" alt="" width="22" height="22"><span>MySQL</span></li>
+            <li class="chip chip--plain"><i class="mask mask--dot"></i><span>Schema design</span></li>
+          </ul>
+        </section>
+
+        <section class="skillset" data-reveal data-reveal-delay="2">
+          <h3 class="skillset__title"><span class="skillset__no">E</span> Cloud &amp; delivery</h3>
+          <ul class="chips chips--lg">
+            <li class="chip"><img src="assets/img/tech/docker.svg" alt="" width="22" height="22"><span>Docker</span></li>
+            <li class="chip chip--wide"><img src="assets/img/tech/aws.svg" alt="" width="34" height="22" class="logo--adapt"><span>AWS</span></li>
+            <li class="chip"><img src="assets/img/tech/vercel.png" alt="" width="22" height="22" class="logo--adapt"><span>Vercel</span></li>
+            <li class="chip"><img src="assets/img/tech/git.svg" alt="" width="22" height="22"><span>Git</span></li>
+            <li class="chip chip--plain"><i class="mask mask--dot"></i><span>CI/CD</span></li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────  PATH  ───────────────────────────── -->
+  <section class="section section--tint" id="path">
+    <div class="shell">
+
+      <header class="section__head" data-reveal>
+        <p class="eyebrow"><span aria-hidden="true">04</span> Path</p>
+        <h2 class="section__title">Where the experience came from.</h2>
+      </header>
+
+      <div class="path">
+
+        <ol class="timeline">
+          <li class="tl" data-reveal>
+            <p class="tl__when">Jan 2024 — Mar 2026</p>
+            <h3 class="tl__what">AI Full-Stack Engineer</h3>
+            <p class="tl__where">Net Solutions · Toronto, Canada <span>(remote)</span></p>
+            <p class="tl__text">
+              Built AI-powered web applications end to end: React and Next.js interfaces,
+              Python and FastAPI services, PostgreSQL and MongoDB behind them. Integrated
+              Claude and LangChain to turn manual, repetitive steps into automation clients
+              could actually trust — and kept the surrounding product boring enough to support.
+            </p>
+            <ul class="tl__tags">
+              <li>React</li><li>Next.js</li><li>Python</li><li>FastAPI</li><li>LangChain</li><li>PostgreSQL</li>
+            </ul>
+          </li>
+
+          <li class="tl" data-reveal data-reveal-delay="1">
+            <p class="tl__when">Feb 2020 — Oct 2023</p>
+            <h3 class="tl__what">Full-Stack Web Developer</h3>
+            <p class="tl__where">Rikkeisoft · Minato, Tokyo, Japan</p>
+            <p class="tl__text">
+              Designed and delivered web applications for enterprise clients — scalable backend
+              services, responsive frontends and secure APIs. This is where I picked up software
+              architecture, cloud deployment, database optimisation and the habit of writing for
+              the person who maintains it next.
+            </p>
+            <ul class="tl__tags">
+              <li>Node.js</li><li>Python</li><li>MySQL</li><li>Docker</li><li>AWS</li><li>Agile</li>
+            </ul>
+          </li>
+        </ol>
+
+        <aside class="path__side">
+          <section class="panel" data-reveal>
+            <h3 class="panel__title">Education</h3>
+            <ul class="edu">
+              <li>
+                <p class="edu__deg">MSc, Computer Science</p>
+                <p class="edu__org">Ivan Franko National University of Lviv</p>
+                <p class="edu__yr">2019 — 2022</p>
+              </li>
+              <li>
+                <p class="edu__deg">BSc, Computer Science</p>
+                <p class="edu__org">Taras Shevchenko National University of Kyiv</p>
+                <p class="edu__yr">2015 — 2019 · AI &amp; software engineering</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="panel" data-reveal data-reveal-delay="1">
+            <h3 class="panel__title">Languages</h3>
+            <ul class="langs">
+              <li><span>English</span><i data-level="5" aria-hidden="true"></i><b>Native / bilingual</b></li>
+              <li><span>Ukrainian</span><i data-level="5" aria-hidden="true"></i><b>Native / bilingual</b></li>
+              <li><span>Polish</span><i data-level="4" aria-hidden="true"></i><b>Fluent</b></li>
+            </ul>
+          </section>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────  CONTACT  ─────────────────────────── -->
+  <section class="section section--contact" id="contact">
+    <div class="shell">
+      <div class="cta" data-reveal>
+
+        <div class="cta__body">
+          <p class="eyebrow"><span aria-hidden="true">05</span> Contact</p>
+          <h2 class="cta__title">Got something half-built, or nothing built yet?</h2>
+          <p class="cta__text">
+            Either is a fine place to start. Tell me what the product needs to do and where it's
+            stuck — I'll come back with an honest read on scope, stack and what I'd do first.
+            No deck, no discovery phase.
+          </p>
+
+          <div class="cta__actions">
+            <a class="btn btn--solid" href="mailto:rof71254@gmail.com">
+              rof71254@gmail.com
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg>
+            </a>
+            <button class="btn btn--ghost" type="button" data-copy="rof71254@gmail.com">
+              <span data-copy-label>Copy address</span>
+            </button>
+          </div>
+
+          <ul class="socials">
+            <li>
+              <a href="https://t.me/skyblue321321" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M21.6 4.3 2.9 11.5c-.8.3-.8 1.4 0 1.7l4.4 1.5 1.7 5.2c.2.7 1.1.9 1.6.3l2.3-2.6 4.5 3.3c.6.4 1.4.1 1.6-.6l3.2-15c.2-.8-.6-1.5-1.4-1.2Z"/></svg>
+                Telegram
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/17712501600" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.9 13.9c-.2.6-1.2 1.2-1.9 1.2-.5 0-1-.1-1.7-.4a11.7 11.7 0 0 1-5.2-4.6c-.7-1.1-.7-2 0-2.9.3-.4.6-.6.9-.6h.6c.2 0 .4.2.6.6l.6 1.4c.1.3 0 .5-.2.7l-.4.5c-.1.2-.2.3 0 .6a8 8 0 0 0 3 2.7c.3.1.5.1.7-.1l.6-.7c.2-.2.4-.3.6-.2l1.5.7c.3.2.4.3.4.5 0 .1 0 .5-.1.9Z"/></svg>
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="mailto:rof71254@gmail.com">
+                <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3 5.5h18v13H3z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.6 6.2 12 12.8l8.4-6.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                Gmail
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cta__aside">
+          <div class="cta__card">
+            <img src="assets/img/andrey-avatar.jpg" width="480" height="480" alt="" loading="lazy" decoding="async">
+            <p><b>Andrey Buno</b><span>Lviv, Ukraine · UTC+2</span></p>
+          </div>
+          <ul class="cta__facts">
+            <li><span>Typical reply</span><b>Within a day</b></li>
+            <li><span>Working hours</span><b>Overlap with EU &amp; US East</b></li>
+            <li><span>Engagements</span><b>Project or ongoing</b></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot__inner">
+    <p class="foot__sig">Designed &amp; built by Andrey Buno — Lviv, <span data-year>2026</span>.</p>
+    <p class="foot__note">Hand-written HTML, CSS and JavaScript. No template, no page builder.</p>
+    <a class="foot__top" href="#top">
+      Back to top
+      <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 19V6M6 11.5 12 5.5l6 6"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="assets/js/water.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

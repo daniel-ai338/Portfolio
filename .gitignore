@@ -1,0 +1,24 @@
+# OS cruft
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local tooling (the site itself needs no build step)
+node_modules/
+package-lock.json
+
+# Unused source art kept locally but not published — these are large
+# AI-generated renders that the page does not reference. The logos actually
+# used are assets/img/tech/{stripe,langchain,vercel}.png
+assets/img/tech/stripe .png
+assets/img/tech/stripe .svg
+assets/img/tech/vrecel.png
+assets/img/tech/vrecel.svg
+assets/img/tech/langchain.svg

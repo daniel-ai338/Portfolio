@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-label="Silverstein Songs website preview">
+  <defs>
+    <radialGradient id="ss-key" cx=".3" cy=".38" r=".62">
+      <stop offset="0" stop-color="#6b4f3d"/>
+      <stop offset=".55" stop-color="#3c2b23"/>
+      <stop offset="1" stop-color="#191211"/>
+    </radialGradient>
+    <linearGradient id="ss-shirt" x1="0" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#c8503a"/>
+      <stop offset="1" stop-color="#7d2b1e"/>
+    </linearGradient>
+    <linearGradient id="ss-skin" x1=".2" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#e8c3a4"/>
+      <stop offset="1" stop-color="#b98b6b"/>
+    </linearGradient>
+    <linearGradient id="ss-vig" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#150f0e" stop-opacity="0"/>
+      <stop offset=".52" stop-color="#150f0e" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#150f0e" stop-opacity=".82"/>
+    </linearGradient>
+    <filter id="ss-soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="ss-soft2" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <clipPath id="ss-page"><rect x="0" y="40" width="1200" height="720"/></clipPath>
+  </defs>
+
+  <!-- browser chrome -->
+  <rect width="1200" height="760" fill="#191211"/>
+  <rect width="1200" height="40" fill="#eceae4"/>
+  <circle cx="24" cy="20" r="5" fill="#dd6b5f"/>
+  <circle cx="42" cy="20" r="5" fill="#e2b04b"/>
+  <circle cx="60" cy="20" r="5" fill="#6cbf6a"/>
+  <rect x="150" y="9" width="900" height="22" rx="11" fill="#fbfaf7"/>
+  <text x="172" y="24" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9a978f">silversteinsongs.com</text>
+  <rect x="0" y="39" width="1200" height="1" fill="#d9d5cc"/>
+
+  <g clip-path="url(#ss-page)">
+    <rect x="0" y="40" width="1200" height="720" fill="url(#ss-key)"/>
+
+    <!-- songwriter at the desk, painted in soft blocks -->
+    <g filter="url(#ss-soft2)">
+      <!-- shoulders / shirt -->
+      <path d="M104 760 q6 -220 190 -272 q40 -14 96 -12 q150 8 190 156 q22 82 26 128 z" fill="url(#ss-shirt)"/>
+      <!-- inner tee -->
+      <path d="M292 528 q52 46 108 44 q-6 96 -10 188 h-116 q10 -128 18 -232 z" fill="#241a18"/>
+      <!-- neck -->
+      <path d="M300 470 q52 40 108 22 l-6 68 q-56 26 -110 -22 z" fill="#b2846a"/>
+      <!-- head, tilted down -->
+      <ellipse cx="352" cy="352" rx="132" ry="152" fill="url(#ss-skin)"/>
+      <!-- hair / beard -->
+      <path d="M226 318 q10 -128 128 -134 q124 -6 132 128 q-18 -58 -74 -76 q-92 -28 -186 82 z" fill="#d9d4cd"/>
+      <path d="M242 396 q22 116 112 122 q92 6 116 -122 q-10 76 -60 106 q-60 34 -114 -6 q-42 -32 -54 -100 z" fill="#cfc9c1"/>
+      <!-- glasses -->
+      <g fill="none" stroke="#1a1512" stroke-width="9">
+        <rect x="252" y="316" width="86" height="60" rx="24"/>
+        <rect x="356" y="316" width="86" height="60" rx="24"/>
+        <path d="M338 342 h18"/>
+        <path d="M252 336 l-40 12"/>
+      </g>
+      <ellipse cx="295" cy="346" rx="15" ry="11" fill="#3a2a22"/>
+      <ellipse cx="399" cy="346" rx="15" ry="11" fill="#3a2a22"/>
+      <!-- mouth -->
+      <path d="M318 436 q34 16 68 -4" fill="none" stroke="#8d5d4a" stroke-width="7" stroke-linecap="round"/>
+      <!-- hand and pencil -->
+      <path d="M150 612 q56 -54 118 -34 q34 12 26 42 q-10 36 -70 40 q-58 4 -74 -48 z" fill="url(#ss-skin)"/>
+      <rect x="106" y="560" width="120" height="15" rx="4" transform="rotate(-26 106 560)" fill="#e8b64a"/>
+      <path d="M84 610 l24 -12 l6 14 z" fill="#e2cdb2"/>
+      <path d="M84 610 l10 -5 l3 7 z" fill="#2c2320"/>
+    </g>
+
+    <!-- guitar suggestion, lower right -->
+    <g opacity=".5" filter="url(#ss-soft)">
+      <ellipse cx="1016" cy="690" rx="150" ry="120" fill="#8a5a30"/>
+      <ellipse cx="1030" cy="668" rx="42" ry="38" fill="#1c1310"/>
+      <rect x="900" y="470" width="34" height="230" rx="10" transform="rotate(16 900 470)" fill="#4a3122"/>
+    </g>
+
+    <rect x="0" y="40" width="1200" height="720" fill="url(#ss-vig)"/>
+
+    <!-- masthead -->
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+      <circle cx="46" cy="82" r="17" fill="#ffffff"/>
+      <path d="M40 90 a7 7 0 1 0 7 -7 v-16 l10 4 v-8 l-14 -6 v26 a7 7 0 0 0 -3 7 z" fill="#e8342f"/>
+      <text x="72" y="88" font-size="17" font-weight="700" fill="#ffffff">silverstein<tspan fill="#e8342f">songs</tspan></text>
+
+      <g font-size="13" fill="#f0ece7">
+        <text x="726" y="87">Silverstein Songs</text>
+        <text x="852" y="87">Co-Writers</text>
+        <text x="938" y="87">What's New</text>
+        <text x="1026" y="87">Contact</text>
+        <text x="1094" y="87">Sylvan Drive Sessions</text>
+      </g>
+    </g>
+
+    <!-- hero copy, right aligned -->
+    <g text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+      <text x="1128" y="290" font-size="21" fill="#efe9e2">Tony-nominated songwriter. Explore the catalog</text>
+      <text x="1128" y="372" font-size="62" font-weight="700" fill="#ffffff" letter-spacing="1.5">JERRY SILVERSTEIN</text>
+      <text x="1128" y="418" font-size="12.5" fill="#cdc4bb">Original songs. Honest storytelling. Award-recognized work.</text>
+    </g>
+
+    <rect x="1000" y="450" width="130" height="42" fill="#e8342f"/>
+    <text x="1065" y="477" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" letter-spacing="1.6">ALL SONGS</text>
+
+    <rect x="1010" y="614" width="120" height="42" fill="#e8342f"/>
+    <text x="1070" y="641" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" letter-spacing="1.6">RADIO</text>
+
+    <circle cx="20" cy="58" r="3.5" fill="#ffffff" opacity=".65"/>
+  </g>
+</svg>
